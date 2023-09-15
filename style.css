@@ -1,0 +1,64 @@
+body{
+    text-align: center;
+    background-image: linear-gradient(green, cyan);
+    color: white;
+    height: 100vh;
+    
+}
+.login{
+    width: 470px;
+    height: 120px;
+    margin: auto;
+    text-align: center;
+    display: flex; 
+    align-items: center;
+   flex-direction: column;
+   background-color: green;
+   padding-bottom: 50px;
+   padding-left: 50px;
+   border-radius: 10px;
+   border: solid 1px rgba(255, 255, 255, 0.582);
+
+
+   padding-right: 50px;
+
+  
+}
+.login button{
+    border: 0;
+    border-radius: 8px;
+    width: 70px;
+   
+}
+.cadastro button{
+    border: 0;
+    border-radius: 8px;
+    width: 150px;
+}
+input{
+    scale: 1.0;
+    transition: all 0.5s;
+}
+input:focus{
+    scale: 1.2;
+   text-align: center; 
+}
+.cadastro{
+   border-radius: 10px;
+
+        width: 470px;
+        height: 180px;
+        margin: auto;
+        text-align: center;
+        display: flex; 
+        align-items: center;
+       flex-direction: column;
+       background-color: green;
+       padding-bottom: 50px;
+       padding-left: 50px;
+       border: solid 1px rgba(255, 255, 255, 0.582);
+       padding-right: 50px;
+    
+      
+
+}
