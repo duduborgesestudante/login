@@ -4,30 +4,49 @@ const campoNovoLogin = document.getElementById("login-cad")
 const campoSenhaLogin = document.getElementById("senha-cad")
 const campoSenhaConfirme = document.getElementById("senha-rep")
 
-let usuarios = []
 
-function cadastrar(){
-    if(campoSenhaLogin.value == campoSenhaConfirme.value){
-        let usuario = {
-            login : campoNovoLogin.value,
-            senha : campoSenhaLogin.value,
+function cadastrar() {
+
+    if (campoSenhaLogin.value == campoSenhaConfirme.value) {
+        const usuario = {
+            login: campoNovoLogin.value,
+            senha: campoSenhaLogin.value
+        };
+        let bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados"));
+        if (bancoDeDados == null) {
+            bancoDeDados = [];
         }
-        usuarios.push(usuario);
-        alert("Usuario cadastrado com sucesso")
+        bancoDeDados.push(usuario);
+        localStorage.setItem("bancoDeDados", JSON.stringify(bancoDeDados));
+        alert("Usuário cadastrado com sucesso!");
+    } else {
+        alert("As senhas são diferentes!");
+    }
+
+
 
 }
-else{
-    alert("Voce digitou duas senhas diferentes")
-}
-}
 
-function login(){
+function login() {
+    let login = campoLogin.value;
+    let senha = campoSenha.value;
+    let bancoDeDados = JSON.parse(localStorage.getItem("bancoDeDados"));
     let mensagem = "Usuário ou senha incorreta!"
-    for(let usuario of usuarios){
-        if(usuario.login == campoLogin.value && usuario.senha == campoSenha.value){
-            mensagem = "Logado com sucesso!"
-            break
+
+    if (bancoDeDados == null) {
+        mensagem = "Nenhum usuário cadastrado até o momento";
+    } else {
+        for (let usuario of bancoDeDados) {
+            if (usuario.login == login && usuario.senha == senha) {
+                localStorage.setItem("logado", JSON.stringify(usuario))
+                mensagem = "Parabéns, você logou!";
+                window.location.href = "./home/home.html"
+                break;
+            }
         }
+
     }
     alert(mensagem)
+
+
 }
