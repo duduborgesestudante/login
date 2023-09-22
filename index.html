@@ -1,33 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    
-    <title>Registro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&family=Poppins:wght@500&display=swap"
+        rel="stylesheet">
+
+    <title>Cadastro</title>
 </head>
+
 <body>
-    <h1>Pagina inicial</h1>
-        
-        <div class="login">
-        <h3>Login</h3>
-        <input type="text" id="login" placeholder="Digite seu login"> <br>
-        <input type="password" id="senha" placeholder="Digite sua senha"> <br>
-            <button onclick="login()">Logar</button>
-    </div>
+
+
+
     <br>
     <div class="cadastro">
-        <h3>Registrar</h3>
-        
-        <input type="text" id="login-cad" placeholder="Digite seu login"> <br>
-        <input type="password" id="senha-cad" placeholder="Digite sua senha"> <br>
-        <input type="password" id="senha-rep" placeholder="Repita sua senha"><br>
-        <button onclick="cadastrar()">Cadastrar</button>
+        <h1 id="titulo">Criar uma nova conta</h2>
+            <label for="email1">Email</label>
+            <input type="text" id="login-cad" name="email1" placeholder="joaozinho123@gmail.com" autocomplete="off">
+            <br>
+            <label for="senha">Senha</label>
+            <input type="password" id="senha-cad" placeholder="******" autocomplete="off"> <br>
+            <label for="senha">Repita a senha</label>
+            <input type="password" id="senha-rep" placeholder="******" autocomplete="off"><br>
+            <button onclick="cadastrar()">Cadastrar</button>
+            <br>
+            <span class="text-sec">
+                <p>Ja tem login?</p>
+                <a href="login.html">
+                    <p style="text-decoration: underline;">Clique aqui</p>
+                </a>
+            </span>
     </div>
-    
+
 
     <script src="script.js"></script>
 </body>
+
 </html>

@@ -1,64 +1,151 @@
-body{
-    text-align: center;
-    background-image: linear-gradient(green, cyan);
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&display=swap');
+
+
+body {
+
+    background-image: linear-gradient(#36322E, #000000);
     color: white;
     height: 100vh;
-    
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+
+
 }
-.login{
-    width: 470px;
-    height: 120px;
-    margin: auto;
+
+#titulo {
     text-align: center;
-    display: flex; 
-    align-items: center;
-   flex-direction: column;
-   background-color: green;
-   padding-bottom: 50px;
-   padding-left: 50px;
-   border-radius: 10px;
-   border: solid 1px rgba(255, 255, 255, 0.582);
+}
+
+.login {
+    border-radius: 10px;
+
+    width: 400px;
+    height: min-content;
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+
+    flex-direction: column;
+    background-color: 0;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    padding-right: 50px;
+    box-shadow: 1px 1px 4px 1px #EBEBEB;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
 
-   padding-right: 50px;
 
-  
 }
-.login button{
-    border: 0;
-    border-radius: 8px;
-    width: 70px;
-   
+
+.login button {
+    height: 60px;
+    border-radius: 15px;
+    width: 190px;
+
+    background-color: #FFB06B;
+    border: 0.3px groove #FF914D;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: large;
+
 }
-.cadastro button{
-    border: 0;
-    border-radius: 8px;
-    width: 150px;
+
+.cadastro button {
+    height: 60px;
+    border-radius: 15px;
+    width: 190px;
+    font-size: large;
+
+    background-color: #FFB06B;
+    border: 0.3px groove #FF914D;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
 }
-input{
-    scale: 1.0;
+
+.text-sec {
+    text-align: center;
+}
+
+a:link {
+    color: white;
+}
+
+/* link que foi visitado */
+a:visited {
+    color: white;
+}
+
+/* mouse over */
+a:hover {
+    color: white;
+}
+
+/* link selecionado */
+a:active {
+    color: white;
+}
+
+input {
+    margin: auto;
+    width: 300px;
+    height: 40px;
     transition: all 0.5s;
+    border-radius: 10px;
+    background-color: #ffffff38;
 }
-input:focus{
-    scale: 1.2;
-   text-align: center; 
-}
-.cadastro{
-   border-radius: 10px;
 
-        width: 470px;
-        height: 180px;
-        margin: auto;
-        text-align: center;
-        display: flex; 
-        align-items: center;
-       flex-direction: column;
-       background-color: green;
-       padding-bottom: 50px;
-       padding-left: 50px;
-       border: solid 1px rgba(255, 255, 255, 0.582);
-       padding-right: 50px;
-    
-      
+input:focus {
+    scale: 1.2;
+
+    border: solid 0.02rem rgb(103, 255, 65);
+    outline: 0;
+    margin-left: 12%;
+}
+
+.cadastro label {
+    margin-left: 12%;
+}
+
+.login label {
+    margin-left: 12%;
+}
+
+input::placeholder {
+    color: white;
+}
+
+.cadastro {
+    border-radius: 10px;
+
+    width: 400px;
+    height: min-content;
+    padding-top: 50px;
+    margin: auto;
+    display: flex;
+
+    flex-direction: column;
+    background-color: 0;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    padding-right: 50px;
+    box-shadow: 1px 1px 4px 1px #EBEBEB;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 
 }
