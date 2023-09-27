@@ -19,6 +19,7 @@ function cadastrar() {
         bancoDeDados.push(usuario);
         localStorage.setItem("bancoDeDados", JSON.stringify(bancoDeDados));
         alert("Usuário cadastrado com sucesso!");
+        window.location.href = "login.html"
     } else {
         alert("As senhas são diferentes!");
     }
@@ -37,7 +38,7 @@ function login() {
         mensagem = "Nenhum usuário cadastrado até o momento";
     } else {
         for (let usuario of bancoDeDados) {
-            if (usuario.login == login && usuario.senha == senha) {
+            if (usuario.login == login & usuario.senha == senha) {
                 localStorage.setItem("logado", JSON.stringify(usuario))
                 mensagem = "Parabéns, você logou!";
                 window.location.href = "./home/home.html"

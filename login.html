@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
@@ -11,13 +11,16 @@
     <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@1,200&family=Poppins:wght@500&display=swap"
         rel="stylesheet">
     <title>Login</title>
+    
 </head>
 
 <body>
     <div class="login">
         <h1 id="titulo">Login</h1>
         <p style="text-align: center;">Logue para continuar!</p>
-        <input type="text" id="login" placeholder="joaozinho123@gmail.com" autocomplete="off"> <br>
+        <label for="#login">Usuario</label>
+        <input type="text" id="login" placeholder="Osvaldo" autocomplete="off"> <br>
+        <label for="#senha">Senha</label>
         <input type="password" id="senha" placeholder="******" autocomplete="off"> <br>
         <button onclick="login()">Logar</button>
         <span class="text-sec">
@@ -27,7 +30,7 @@
             </a>
         </span>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>

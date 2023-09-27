@@ -32,7 +32,7 @@ body {
     padding-left: 50px;
 
     padding-right: 50px;
-    box-shadow: 1px 1px 4px 1px #EBEBEB;
+    box-shadow: 1px 1px 4px 1px #FF914D; ;
     font-family: 'Kanit', sans-serif;
     font-family: 'Poppins', sans-serif;
     position: absolute;
@@ -56,6 +56,22 @@ body {
     margin-right: auto;
     font-size: large;
 
+}
+#deslogar{
+    height: 60px;
+    border-radius: 15px;
+    width: 190px;
+    font-size: large;
+
+    background-color: #FFB06B;
+    border: 0.3px groove #FF914D;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .cadastro button {
@@ -100,15 +116,96 @@ input {
     height: 40px;
     transition: all 0.5s;
     border-radius: 10px;
-    background-color: #ffffff38;
+    background-color: #747474;
+    color: rgba(255, 255, 255, 0.815);
+    padding-left: 10px;
+}
+
+.calculadora{
+    border-radius: 10px;
+
+    width: max-content;
+    height: min-content;
+    padding-top: 50px;
+    margin: auto;
+    display: flexbox;
+    margin-top: 100px;
+
+    flex-direction: row;
+    background-color: 0;
+    padding-bottom: 50px;
+    padding-left: 50px;
+
+    padding-right: 50px;
+    box-shadow: 1px 1px 4px 1px #FF914D; ;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+.row1{
+    text-align: right;
+    margin: 20px;
+    
+}
+.row2{
+    text-align: right;
+    margin: 20px;
+}
+.row3{
+    text-align: right;
+    margin: 20px;
+}
+.row4{
+    text-align: right;
+    margin: 20px;
+}
+.row5{
+    text-align: right;
+    margin: 20px;
+    margin-top: 30px;
+}
+#screenContainer{
+    
+    height: 60px;
+    text-align: end;
+    font-size: 50px;
+    padding-right: 10px;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius: 2px;
+}
+#screenContainer input{
+    width: 93%;
+    height: 60px;
+    font-size: 30px;
+    margin-right: 2.5%;
+   
+    
+}
+.calculadora button{
+    height: 60px;
+    width: 150px;
+    background-color:#36322E ;
+    border: 1px solid #6b6a69;
+    border-radius: 3px;
+    color: #ffff;
+    font-weight: 800;
+    margin-right: 10px;
+
 }
 
 input:focus {
     scale: 1.2;
-
-    border: solid 0.02rem rgb(103, 255, 65);
+    color: rgb(255, 255, 255);
+    border: solid 0.02rem rgb(0, 102, 255);
     outline: 0;
     margin-left: 12%;
+    padding-left: 10px;
 }
 
 .cadastro label {
@@ -120,7 +217,7 @@ input:focus {
 }
 
 input::placeholder {
-    color: white;
+    color: rgba(255, 255, 255, 0.308);
 }
 
 .cadastro {
@@ -138,7 +235,7 @@ input::placeholder {
     padding-left: 50px;
 
     padding-right: 50px;
-    box-shadow: 1px 1px 4px 1px #EBEBEB;
+    box-shadow: 1px 1px 4px 1px rgb(0, 102, 255);
     font-family: 'Kanit', sans-serif;
     font-family: 'Poppins', sans-serif;
     position: absolute;
