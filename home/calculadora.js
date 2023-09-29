@@ -8,7 +8,7 @@ document.querySelector('#delete')
         screen.value = screen.value.substring(0, (screen.value.length -1));
 })
 function addToScreen(value){
-    const operationSigns = ['*','+','-','/','.'];
+    const operationSigns = [' * ',' + ',' - ',' / ',' . '];
     screen.value += value;
     if (operationSigns.includes(value)){
         var valorAnterior = screen.value.length - 2;
